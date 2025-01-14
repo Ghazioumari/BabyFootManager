@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BF Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <main>
+            <div class="new-game">
+                <input type="text" id="newGameInput" placeholder="Nouvelle partie...">
+                <button id="addGameBtn">Ajouter</button>
+            </div>
+
+            <div class="games-list">
+                <h2>Les parties <span id="gameCount" class="counter">0</span></h2>
+                <ul id="gamesList"></ul>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat-header">
+                    <span>Tchat</span>
+                    <span class="user-icon">👤</span>
+                </div>
+                <div class="chat-messages" id="chatMessages"></div>
+                <div class="chat-input">
+                    <input type="text" id="nicknameInput" placeholder="Nickname...">
+                    <input type="text" id="messageInput" placeholder="Bien et toi ?">
+                    <button id="sendMessageBtn">Envoyer</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
